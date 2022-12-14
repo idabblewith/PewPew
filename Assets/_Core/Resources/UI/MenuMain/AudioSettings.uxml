@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="basics" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:Slider label="VOLUME              " high-value="1" name="master-volume-slider" low-value="0.0001" style="height: 15%; font-size: 50px; color: rgb(156, 156, 156); -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); -unity-text-align: middle-center;" />
+        <ui:Slider label="MUSIC                " high-value="1" name="music-volume-slider" low-value="0.0001" style="height: 15%; font-size: 50px; color: rgb(156, 156, 156); -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); -unity-text-align: middle-center;" />
+        <ui:Slider label="SFX                    " high-value="1" name="sfx-volume-slider" low-value="0.0001" show-input-field="false" style="height: 15%; font-size: 50px; color: rgb(156, 156, 156); -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); -unity-text-align: middle-center;" />
+        <ui:Slider label="MY VOICE           " high-value="1" name="myvoice-volume-slider" low-value="0.0001" style="height: 15%; font-size: 50px; color: rgb(156, 156, 156); -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); -unity-text-align: middle-center;" />
+        <ui:Slider label="OTHER VOICE      " high-value="1" name="othervoice-volume-slider" low-value="0.0001" style="height: 15%; font-size: 50px; color: rgb(156, 156, 156); -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); -unity-text-align: middle-center;" />
+    </ui:VisualElement>
+</ui:UXML>

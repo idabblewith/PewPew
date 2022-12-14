@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; top: 0; left: 0; right: 0; bottom: 0; flex-direction: row;">
+        <ui:VisualElement name="left" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33%;">
+            <ui:VisualElement name="health-section" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:VisualElement name="map-section" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="centre" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 34%;" />
+        <ui:VisualElement name="right" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33%;">
+            <ui:VisualElement name="fps-section" picking-mode="Ignore" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: flex-end; height: 50%; align-items: center; align-self: flex-end; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="fps-value" picking-mode="Ignore" style="flex-shrink: 1; flex-grow: 0; -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); color: rgb(38, 255, 0); font-size: 35px; -unity-text-align: upper-right; width: auto; align-items: center; justify-content: center; align-self: flex-start;" />
+                <ui:Label tabindex="-1" text="Avg FPS" display-tooltip-when-elided="true" name="fps-tag" picking-mode="Ignore" style="flex-shrink: 1; flex-grow: 0; -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); color: rgb(38, 255, 0); font-size: 35px; -unity-text-align: upper-left; width: auto; align-items: center; justify-content: center; align-self: flex-start;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ammo-section" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

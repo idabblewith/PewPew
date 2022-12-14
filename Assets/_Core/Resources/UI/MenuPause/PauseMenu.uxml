@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="overlay" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.69); position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center; align-items: center;">
+        <ui:VisualElement name="panel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-items: center; width: 50%;">
+            <ui:Button text="Continue" display-tooltip-when-elided="true" name="continue-button" style="font-size: 50px; min-width: 500px; margin-bottom: 20px;" />
+            <ui:Button text="Back to Menu" display-tooltip-when-elided="true" name="main-menu-button" style="font-size: 50px; min-width: 500px; padding-top: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

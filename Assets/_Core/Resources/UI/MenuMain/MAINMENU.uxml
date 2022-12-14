@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Core/Resources/UI/_Styling/USS_MainMenu.uss?fileID=7433441132597879392&amp;guid=b86629339623c8d4581245fd9ca8127d&amp;type=3#USS_MainMenu" />
+    <ui:VisualElement name="screen-container" class="screen-container">
+        <ui:VisualElement name="base-menu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; flex-direction: row; display: flex;">
+            <ui:VisualElement name="backing" class="backing-image" style="background-color: rgb(0, 0, 0); opacity: 0;" />
+            <ui:VisualElement name="side-menu" class="side-menu" style="border-right-width: 2px; border-left-width: 0;">
+                <ui:VisualElement name="mm-stuff" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="PEW PEW" display-tooltip-when-elided="true" name="menu-title" class="menu-title" />
+                    <ui:VisualElement name="divider-pad-bot" class="divider-pad-bot" />
+                    <PlainButton focusable="false" text="PLAY" name="play-button" class="menu-button" />
+                    <PlainButton focusable="false" text="OPTIONS" name="options-button" class="menu-button" />
+                    <PlainButton focusable="false" text="ABOUT" name="about-button" class="menu-button" />
+                    <PlainButton focusable="false" text="QUIT" name="quit-button" class="menu-button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom-section" class="bottom-section" style="padding-bottom: 0; height: 150px; left: 0; right: 0;">
+                    <ui:VisualElement name="divider-pad-top" class="divider-pad-top" style="height: 2px; max-height: 2px; position: relative; top: 0; left: 0; right: 0; bottom: 0; margin-left: 0; margin-right: 0; margin-top: -44px; margin-bottom: 0;" />
+                    <ui:Label tabindex="-1" text="Face up against others online or in a dedicated server." display-tooltip-when-elided="true" name="option-description" class="option-description" style="color: rgba(195, 195, 195, 0.43); position: relative; padding-top: 48px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="central-menu" class="central-menu" style="display: flex; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                <ui:VisualElement name="play-menu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                <SettingsVE name="settings-menu" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; padding-top: 40px; padding-bottom: 40px;" />
+                <AboutVE name="about-menu" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; color: rgb(255, 255, 255); display: none;" />
+                <ui:Label tabindex="-1" text="V 0.01" display-tooltip-when-elided="true" name="versioning" class="version-tag" style="right: 0; left: auto;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quit-confirmation-modal" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.95); position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center; display: none;">
+                <ui:VisualElement name="dialog" style="flex-grow: 1; background-color: rgb(0, 0, 0); max-width: 50%; max-height: 50%; justify-content: flex-start; align-items: auto; align-self: center; width: 50%; height: 50%; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; border-top-left-radius: 1px; border-bottom-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px;">
+                    <ui:Label tabindex="-1" text="Quit Game?" display-tooltip-when-elided="true" name="prompt" style="color: rgb(255, 255, 255); font-size: 69px; flex-wrap: wrap; white-space: normal; justify-content: center; align-items: center; align-self: center; padding-top: 74px;" />
+                    <ui:VisualElement name="button-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-self: center; align-items: center; flex-direction: row;">
+                        <ui:Button text="Confirm" display-tooltip-when-elided="true" name="quit-confirm-button" style="font-size: 40px; padding-left: 10px; padding-right: 10px; margin-left: 14px; margin-right: 14px; width: 60%;" />
+                        <ui:Button text="Cancel" display-tooltip-when-elided="true" name="quit-cancel-button" style="font-size: 40px; margin-left: 14px; margin-right: 14px; width: 60%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

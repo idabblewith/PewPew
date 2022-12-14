@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="setting-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.82); height: auto; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 80%;">
+            <ui:VisualElement name="option-select" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); height: 10%; flex-direction: row; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; margin-left: 40px; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
+                <PlainButton focusable="false" text="Video" name="video-button" style="font-size: 60px; -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); color: rgb(255, 255, 255); width: 33%; -unity-text-align: middle-center; -unity-slice-top: 0; -unity-slice-bottom: 0; padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;" />
+                <PlainButton focusable="false" text="Audio" name="audio-button" style="font-size: 60px; -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); color: rgb(255, 255, 255); width: 34%; -unity-text-align: middle-center; padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;" />
+                <PlainButton focusable="false" text="Misc." name="misc-button" style="font-size: 60px; -unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); color: rgb(255, 255, 255); width: 33%; -unity-text-align: middle-center; padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="margin-box" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); margin-left: 50px; margin-right: 50px; margin-top: 50px; margin-bottom: 50px;">
+                <AudioSettingsVE name="audio-settings" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none;" />
+                <VideoSettingsVE name="video-settings" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="menu-buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: 20%;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; position: absolute; top: 0; left: auto; right: 0; bottom: 0; width: 50%;">
+                <PlainButton focusable="false" name="save-button" text="Save" style="-unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); font-size: 50px; color: rgb(255, 255, 255); flex-shrink: 1; flex-grow: 1; justify-content: center; align-items: center; align-self: center; -unity-text-align: middle-center; padding-left: 50px; padding-right: 50px; padding-top: 50px; padding-bottom: 50px;" />
+                <PlainButton focusable="false" name="reset-button" text="Reset" style="-unity-font-definition: resource(&apos;Fonts/HQFPSTemplate SDF&apos;); font-size: 50px; color: rgb(255, 255, 255); flex-shrink: 1; flex-grow: 1; align-items: center; justify-content: center; align-self: center; -unity-text-align: middle-center; padding-left: 50px; padding-right: 50px; padding-top: 50px; padding-bottom: 50px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

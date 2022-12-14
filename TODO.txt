@@ -1,0 +1,7 @@
+Fix settings
+	- volume slider works as updated in Editor but
+	  not working at runtime but updates after returning from new game scene
+	- Implement other settings
+
+Fix camera jittering
+	- Perhaps due to sensitivity, slight jagged jitter when moving camera with mouse
